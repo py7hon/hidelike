@@ -1,0 +1,16 @@
+{
+	"name": "Hide Facebook Like",
+	"description" : "Hides Facebook Like",
+	"version": "1.0",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_icon": ""
+    },
+	"content_scripts": [
+		{
+			"js": ["hide_like_button.js"],
+			"matches": ["https://www.facebook.com/*"],
+			"run_at": "document_idle"
+		}
+	]
+}
